@@ -1,0 +1,85 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hey",
+                "How are you",
+                "Is anyone there?",
+                "Hello",
+                "Good day"
+            ],
+            "responses": [
+                "Welcome to the world of One Piece!",
+                "Hey there, Nakama!",
+                "Ahoy! What brings you to the Grand Line?",
+                "Hello, fellow pirate! Ready to set sail?"
+            ]
+        },
+        {
+            "tag": "farewell",
+            "patterns": [
+                "Goodbye",
+                "Bye",
+                "See you later",
+                "Catch you later",
+                "I'm off now",
+                "Farewell"
+            ],
+            "responses": [
+                "Until we meet again on the seas!",
+                "Farewell, may your adventures be legendary!",
+                "Take care, Nakama. The Grand Line awaits!",
+                "Goodbye! May the One Piece be with you!"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thank you",
+                "Thanks",
+                "Thanks a lot",
+                "Thank you very much",
+                "Appreciate it"
+            ],
+            "responses": [
+                "You're welcome, Nakama!",
+                "No problem! Anything for a fellow pirate!",
+                "Glad I could help! Keep chasing your dreams!",
+                "Anytime! The Straw Hat crew is always here to help!"
+            ]
+        },
+        {
+            "tag": "info",
+            "patterns": [
+                "Tell me about One Piece",
+                "What is One Piece?",
+                "I want to know about One Piece",
+                "Can you give me info about One Piece?"
+            ],
+            "responses": [
+                "One Piece is a legendary anime and manga series created by Eiichiro Oda. It follows the adventures of Monkey D. Luffy and his pirate crew, the Straw Hat Pirates, as they search for the ultimate treasure known as the One Piece, hidden somewhere in the Grand Line.",
+                "One Piece is a story of friendship, adventure, and the pursuit of dreams. It has captured the hearts of millions worldwide with its rich characters, intricate plot, and epic battles.",
+                "In One Piece, you'll encounter powerful pirates, fearsome marines, mysterious islands, and ancient civilizations. It's a journey like no other, filled with laughter, tears, and unforgettable moments.",
+                "Set sail with Luffy and his crew as they face off against powerful foes, uncover the mysteries of the world, and strive to become the Pirate King!"
+            ]
+        },
+        {
+            "tag": "unknown",
+            "patterns": [
+                "I don't understand",
+                "Can you repeat that?",
+                "What do you mean?",
+                "I'm not sure I follow",
+                "Could you explain?"
+            ],
+            "responses": [
+                "Sorry, I'm just a humble bot. Maybe try asking about something related to One Piece?",
+                "My apologies, I'm still learning. Want to hear a fun fact about One Piece instead?",
+                "Oops! Looks like I got lost in the Grand Line. How about we talk more about the Straw Hat crew?",
+                "I'm afraid I didn't catch that. How about we discuss your favorite One Piece character?"
+            ]
+        }
+    ]
+}
