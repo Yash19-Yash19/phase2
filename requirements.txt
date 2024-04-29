@@ -5,4 +5,4 @@ transformers
 speechrecognition
 gtts
 numpy
-
+pywin32
