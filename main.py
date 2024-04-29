@@ -9,6 +9,8 @@ from gtts import gTTS
 import os
 import pygame
 
+
+os.system("python train.py")
 # Load intents and pre-trained model
 with open('intents.json', 'r') as f:
     intents = json.load(f)
