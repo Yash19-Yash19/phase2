@@ -1,8 +1,6 @@
 streamlit
 torch
 nltk
-transformers
-speechrecognition
+SpeechRecognition
 gtts
-numpy
-pywin32
+pygame
