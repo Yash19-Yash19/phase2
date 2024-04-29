@@ -7,7 +7,7 @@ import numpy as np
 import speech_recognition as sr
 from gtts import gTTS
 import os
-import winsound
+import pygame
 
 # Load intents and pre-trained model
 with open('intents.json', 'r') as f:
@@ -27,15 +27,14 @@ model = NeuralNet(input_size, hidden_size, output_size)
 model.load_state_dict(model_state)
 model.eval()
 
+# Initialize pygame mixer
+pygame.mixer.init()
+
 # Function to get text input
-
-
 def get_text_input():
     return st.text_input("You:")
 
 # Function to get voice input
-
-
 def get_voice_input():
     audio_bytes = None
     with st.spinner("Listening..."):
@@ -50,16 +49,15 @@ def get_voice_input():
             return None
 
 # Function to convert text to speech
-
-
 def text_to_speech(text):
     tts = gTTS(text=text, lang='en')
     tts.save("output.mp3")
-    winsound.PlaySound("output.mp3", winsound.SND_FILENAME)
+    pygame.mixer.music.load("output.mp3")
+    pygame.mixer.music.play()
+    while pygame.mixer.music.get_busy():
+        pygame.time.Clock().tick(10)
 
 # Function to get response from the chatbot
-
-
 def get_response(input_text):
     sentence = tokenize(input_text)
     X = bag_of_words(sentence, all_words)
@@ -82,8 +80,6 @@ def get_response(input_text):
         return "I do not understand..."
 
 # Main function to run the Streamlit app
-
-
 def main():
     st.title("Chatbot")
     is_recording = False
