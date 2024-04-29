@@ -1,0 +1,8 @@
+streamlit
+torch
+nltk
+transformers
+speechrecognition
+gtts
+numpy
+
